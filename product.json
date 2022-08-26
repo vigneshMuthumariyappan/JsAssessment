@@ -1,0 +1,38 @@
+[
+    {
+        "id": 0,
+        "name":"T-shirts",
+        "title":"Boys' Supersoft Sleeveless Muscle Shirts",
+        "Amount":"300 Rs",
+        "discription":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, eligendi libero. Magnam sapiente velit fugiat provident excepturi aliquid earum, vitae perferendis quaerat similique incidunt repellendus totam assumenda inventore at tempore.",
+        "company":"Hot",
+        "small":"small",
+        "mediam":"mediam",
+        "large":"large",
+        "img":"/image/Muscle Shirts.jpg"
+    },
+    {
+        "id": 1,
+        "name":"shirts",
+        "title":"Boys' Supersoft Sleeveless Muscle Shirts",
+        "Amount":"300 Rs",
+        "discription":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, eligendi libero. Magnam sapiente velit fugiat provident excepturi aliquid earum, vitae perferendis quaerat similique incidunt repellendus totam assumenda inventore at tempore.",
+        "company":"Hot",
+        "small":"small",
+        "mediam":"mediam",
+        "large":"large",
+        "img":"/image/Best-sell-1.webp"
+    },
+    {
+        "id": 2,
+        "name":"dress",
+        "title":"Boys' Supersoft Sleeveless Muscle Shirts",
+        "Amount":"300 Rs",
+        "discription":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, eligendi libero. Magnam sapiente velit fugiat provident excepturi aliquid earum, vitae perferendis quaerat similique incidunt repellendus totam assumenda inventore at tempore.",
+        "company":"Hot",
+        "small":"small",
+        "mediam":"mediam",
+        "large":"large",
+        "img":"/image/Best-sell-2.jpg"
+    }
+]

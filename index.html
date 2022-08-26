@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap cdn -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"> -->
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <!--  -->
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+      <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+</head>
+<body>
+    <!-------------Navigation bar----------------->
+    <nav>
+        <p>Zhop</p>
+        <div class="search">
+            <input type="text" autocomplete="off" placeholder="Search..." id="search">
+            <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+        </div>
+        <div id="media">
+        <i class="fa fa-times icon" onclick="onClose()"></i>
+        <ol id ="ol">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Men's Shop</a></li>
+            <li><a href="/">Women's Shop</a></li>
+            <li><a href="/">Contact Us</a></li>
+            <li><a class="btn_" href="./login/LoginForm.html">Login</a></li>
+        </ol>
+      </div>
+      <i class="fa fa-bars icons" onclick="onMenu()"></i>
+    </nav>
+<script src="./Ajax.js"></script>
+    <!-- ------------Script nav icon--------------- -->
+    <!-- <script>
+      
+function onClose(){
+    document.querySelector("#media").style.right = "-200px";
+}
+function onMenu(){
+    document.querySelector("#media").style.right = "0px";
+}
+ carocel -->
+
+<!------------Body container------------------>
+
+<div id="body-container">
+<div class="image">
+  <div class="image-box">
+   <h3>Buy What you look..!</h3>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium optio suscipit officia rerum natus iusto consequuntur deserunt pariatur et iste, doloribus hic magni, doloremque culpa porro deleniti ipsam, quaerat ex.</p>
+   <a href="/">Go..</a>
+  </div>
+</div>
+
+<!--------------Carosuel work------------------>
+<p class="center">Collection<p>
+    <div class="carosuel-slider">
+<div class="your-class">
+    <div class="div">
+        <img src="./image/Carosule/Men.jpg" alt="">
+        <div class="text-comtainer">
+            <div class="text">
+                <h3>Casual Shirts</h3>
+                <h4>Price - 300Rs</h4>
+                <a href="">Buy</a>
+            </div>
+        </div>
+    </div>
+    <div class="div">
+        <img src="./image/Carosule/Men1.jpg" alt="">
+        <div class="text-comtainer">
+            <div class="text">
+                <h3>Casual Shirts</h3>
+                <h4>Price - 300Rs</h4>
+                <a href="">Buy</a>
+            </div>
+        </div>
+    </div>
+    <div class="div">
+        <img src="./image/Carosule/Men2.jpg" alt="">
+        <div class="text-comtainer">
+            <div class="text">
+                <h3>Casual Shirts</h3>
+                <h4>Price - 300Rs</h4>
+                <a href="">Buy</a>
+            </div>
+        </div>
+    </div>
+    <div class="div">
+        <img src="./image/Carosule/Men4.jpeg" alt="">
+        <div class="text-comtainer">
+            <div class="text">
+                <h3>Casual Shirts</h3>
+                <h4>Price - 300Rs</h4>
+                <a href="">Buy</a>
+            </div>
+        </div>
+    </div>
+    <div class="div">
+        <img src="./image/Carosule/Men5.webp" alt="">
+        <div class="text-comtainer">
+            <div class="text">
+                <h3>Casual Shirts</h3>
+                <h4>Price - 300Rs</h4>
+                <a href="">Buy</a>
+            </div>
+        </div>
+    </div>
+    <div class="div">
+        <img src="./image/Carosule/Men6.png" alt="">
+        <div class="text-comtainer">
+            <div class="text">
+                <h3>Casual Shirts</h3>
+                <h4>Price - 300Rs</h4>
+                <a href="">Buy</a>
+            </div>
+        </div>
+    </div><div class="div">
+        <img src="./image/Carosule/Men8.jpg" alt="">
+        <div class="text-comtainer">
+            <div class="text">
+                <h3>Casual Shirts</h3>
+                <h4>Price - 300Rs</h4>
+                <a href="">Buy</a>
+            </div>
+        </div>
+    </div>
+    <div class="div">
+        <img src="./image/MuscleShirts.jpg" alt="">
+        <div class="text-comtainer">
+            <div class="text">
+                <h3>Muscle Shirts</h3>
+                <h4>Price - 300Rs</h4>
+                <a href="">Buy</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!----------------More offer like cards------------------->
+
+<p class="center">Welcome to Zhop Login to get more offer</p>
+<div class="-card">
+    <div class="oneCard">
+        <a href="/"><img src="./image/card-1.jpg" alt="..."></a>
+        <a href="/"><p>Men's Collection</p></a>
+    </div>
+    <div class="oneCard">
+        <a href=""><img src="./image/card-2.jpg" alt=""></a>
+        <a href=""><p>Women's Collection</p></a>
+    </div>
+    <div class="oneCard">
+        <a href=""><img src="./image/card-3.jpg" alt=""></a>
+        <a href=""><p>Children Collection</p></a>
+    </div>
+    <div class="oneCard">
+        <a href=""><img src="./image/card-4.jpg" alt=""></a>
+        <a href=""><p>Electronic's Collection</p></a>
+    </div>
+</div>
+<!-- -------------------trending----------------- -->
+<p class="center">BEST SELLER</p>
+<div class="-card">
+  <div class="best-card">
+    <img src="./image/Best-sell-1.webp" alt="">
+    <a href="/"><p>Buy</p></a>
+  </div>
+  <div class="best-card">
+    <img src="./image/Best-sell-2.jpg" alt="">
+    <a href="/"><p>Buy</p></a>
+  </div>
+  <div class="best-card">
+    <img src="./image/best-sell-3.webp" alt="">
+    <a href="/"><p>Buy</p></a>
+  </div>
+</div>
+</div>
+<!-- ---------------Footer------------- -->
+<footer>
+    <p>This the world fastest growing eCommerce Site Follow Us</p>
+    <div class="footer-icon">
+        <span><a href="/"><i class="fa-brands fa-facebook"></i></a></span>
+        <span><a href="/"><i class="fa-brands fa-youtube"></i></a></span>
+        <span><a href="/"><i class="fa-brands fa-twitter"></i></a></span>
+        <span><a href="/"><i class="fa-brands fa-instagram"></i></a></span>
+    </div>
+</footer>
+<script>
+  $(document).ready(function(){
+      $('.your-class').slick({
+          dots: true,
+          infinite: true,
+          centerMode:true,
+          centerPadding:'30px',
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          draggable:true,
+          arrows:true,
+           });
+      });
+</script> 
+<!-- <script src="./script.js"></script> -->
+</body>
+</html>

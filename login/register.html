@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhop/Register</title>
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- jquery -->
+    <!-- jquery validation -->
+    <script src="./js/jquery.js"></script>
+<script src="./js/jquery.validate.js"></script>
+</head>
+<body>
+    <div class="body">
+    <div class="login-container">
+        <h2>
+            Zhop Register
+        </h2>
+    <form id="Register-form">
+
+        <div class="login-box">
+            <p class="label">UserName&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+            <input type="text" placeholder="Enter UserName" autocomplete="off"  id="UserName" name="username">
+            <!-- <span id="UserNameError"></span> -->
+        </div>
+        <div class="login-box">
+            <p class="label">Email&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+            <input type="email" placeholder="Enter the your email" autocomplete="off"  id="ReEmail" name="email">
+            <!-- <span id="ReemailError"></span> -->
+        </div>
+        <div class="login-box">
+            <p class="label">Password&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+            <input type="password" placeholder="password" autocomplete="off"  id="password" name="password">
+            <!-- <span id="RepasswordError"></span> -->
+        </div>
+        <div class="login-box">
+            <p class="label">Confirm Password</p>
+            <input type="password" placeholder="ConfirmPassword" autocomplete="off"  id="ReCoPass" name="ConfirmPassword">
+            <!-- <span id="ReCopasswordError"></span> -->
+        </div>
+        <!-- <button type="submit" name="submit" class="btn-submit">submit</button> -->
+        <input type="submit" class="btn-submit" value="Sign Up">
+
+    </form>
+        <!-- <span id="ReFinalCheck"></span> -->
+    </div>
+</div>
+    <script src="./registerjquery.js"></script>
+    <!-- <script src="./register.js"></script> -->
+</body>
+</html>

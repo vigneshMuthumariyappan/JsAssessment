@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Jquery validation -->
+    <!-- <script src="/jQ-validation/dist/jquery.validate.js"></script> -->
+    <script src="./js/jquery.js"></script>
+<script src="./js/jquery.validate.js"></script>
+    <title>Zhop/login</title>
+</head>
+<body>
+    <div class="body">
+    <div class="login-container">
+        <h2>
+            Zhop Login
+        </h2>
+        <form>
+        <div class="login-box">
+            <p class="label">Email&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+            <input type="email" placeholder="Enter the your email" autocomplete="off"  id="email" onkeyup="emailField()">
+            <span id="emailError"></span>
+        </div>
+        <div class="login-box">
+            <p class="label">Password</p>
+            <input type="password" placeholder="password" autocomplete="off" id="pass" onkeyup="passWord(event)">
+            <span id="passwordError"></span>
+        </div>
+        <input type="submit" class="btn-submit" value="Login" onclick="Validation(event)">
+    </form>
+        <span id="FinalCheck"></span>
+        <p>forget password?<a href="/">click me</a></p>
+        <p>Create a new account <a href="./register.html">click me</a></p>
+    </div>
+</div>
+    <script src="/script.js"></script>
+    <script src="./registerjquery.js"></script>
+</body>
+</html>

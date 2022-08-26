@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- jquery validation -->
+        <script src="./js/jquery.js"></script>
+        <script src="./js/jquery.validate.js"></script>
+        <link rel="stylesheet" href="/style.css">
+</head>
+<body class="ProductDetail">
+    <!-- <script src="/Ajax.js"></script> -->
+    <script>
+        console.log(window.location.search);
+        $(document).ready(function(){
+        $(".ProductDetail").load("/Js/AssessmentProject/product.json",function(responseTxt,statusTxt,xhr){
+            if(statusTxt == "success"){
+                // console.log(responseTxt);
+            let index =window.location.search;
+            let i = index.substring(1,index.length);
+            console.log(i)
+                let data = JSON.parse(responseTxt);
+
+                console.log(typeof data);
+            let ld =  `
+            <div class="tem-container">
+                <div class="tem-image">
+                    <img src="/Js/AssessmentProject/${data[i].img}" alt="....">
+                </div>
+                <div class="tem-overView">
+                    <h3>${data[i].title}</h3>
+                    <h4>${data[i].company}</h4>
+                    <h4>Price - ${data[i].Amount}</h4>
+                    <a href = "./login/ProductDetail.html?${data[i].id}" class = "tem-btn"> Buy </a>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="${data[i].small}">
+                    <lable>${data[i].small}</lable>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="${data[i].mediam}">
+                    <lable>${data[i].mediam}</lable>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="${data[i].large}">
+                    <lable>${data[i].large}</lable>
+                    <p>${data[i].discription}</p>
+                </div>
+            </div>`
+            console.log(ld);
+            document.querySelector(".ProductDetail").innerHTML=ld
+            }
+            if (statusTxt == "error")
+            alert("error")
+        })
+        })
+    </script>
+</body>
+</html>
